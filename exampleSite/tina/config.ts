@@ -16,7 +16,7 @@ export default defineConfig({
   },
   media: {
     tina: {
-      mediaRoot: "images",
+      mediaRoot: "",
       publicFolder: "static",
     },
   },
@@ -27,6 +27,7 @@ export default defineConfig({
         label: "Post (en)",
         name: "post__en_",
         path: "exampleSite/content/english/blog",
+        frontmatterFormat: "yaml",
         match: {
           include: "**/*",
         },
@@ -46,6 +47,7 @@ export default defineConfig({
         label: "Post (fr)",
         name: "post__fr_",
         path: "exampleSite/content/french/blog",
+        frontmatterFormat: "yaml",
         match: {
           include: "**/*",
         },
@@ -65,6 +67,7 @@ export default defineConfig({
         label: "Author (en)",
         name: "author__en_",
         path: "exampleSite/content/english/author",
+        frontmatterFormat: "yaml",
         match: {
           include: "**/*",
         },
@@ -84,6 +87,7 @@ export default defineConfig({
         label: "Author (fr)",
         name: "author__fr_",
         path: "exampleSite/content/french/author",
+        frontmatterFormat: "yaml",
         match: {
           include: "**/*",
         },
@@ -103,6 +107,7 @@ export default defineConfig({
         label: "Homepage",
         name: "homepage",
         path: "exampleSite/data",
+        frontmatterFormat: "yaml",
         match: {
           include: "**/*",
         },
@@ -121,6 +126,7 @@ export default defineConfig({
         label: "i18n",
         name: "i18n",
         path: "exampleSite/i18n",
+        frontmatterFormat: "yaml",
         match: {
           include: "**/*",
         },
@@ -139,6 +145,7 @@ export default defineConfig({
         label: "Configuration",
         name: "configuration",
         path: "exampleSite",
+        frontmatterFormat: "yaml",
         match: {
           include: "*",
         },
